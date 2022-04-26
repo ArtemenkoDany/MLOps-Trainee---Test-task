@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+}
+
+:root{
+  --hue-value-1:0;
+  --hue-value-2:230;
+  --main-color: hsl(var(--hue-value-1),74%, 61%);
+  --button-hover-color: hsl(var(--hue-value-1), 57%, 53%);
+  --body-bg-color: hsl(var(--hue-value-1), 40%, 97%);
+  --border-color-2: hsl(var(--hue-value-1), 40%, 93%);
+  --shadow: 0 0 10px hsl(var(--hue-value-1), 40%, 90%);
+  --body-gradient-bg-color-1: hsl(var(--hue-value-1), 100%, 50%, 0.2);
+  --body-gradient-bg-color-2: hsl(var(--hue-value-2), 100%, 50%, 0.2);
+  --fecoration-bg-color-1: hsl(var(--hue-value-1),100%, 70% );
+  --fecoration-bg-color-2: hsl(var(--hue-value-2),100%, 70% );
+}
+
+:root{
+  --orange: hsl(36, 80%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --WHITE: hsl(0, 0%, 100%);
+  --BLACK: hsl(0, 0%, 0%);
+  --black-90: hsl(0, 0%, 10%);
+  --black70: hsl(0, 0%, 30%);
+  --black-alpha-40: hsl(0, 0%, 0%, 0.4);
+  --yellow-light: hsl(44, 95%, 83%);
+  --green-light: hsl(158, 68%, 75%);
+  --reg-light: hsl(0, 84%, 80%);
+  --orange-light: hsl(22, 85%, 80%);
+  --select-box0bg-color: hsl(0, 0%, 90%);
+  --border-color-1: hsl(0,0%,90%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body{
+  background-color: var(--body-bg-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black70);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.form-signin.button {
+  background-color: var(--white);
+  border: none;
+  color: var(--yellow-light);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 20px;
+  font-size: 16px;
+}
