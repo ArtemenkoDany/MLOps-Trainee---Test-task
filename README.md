@@ -5,9 +5,7 @@ YOLOv5 is a family of object detection architectures and models pretrained on th
  
 ## This test-task built with flask (Python) html/CSS and JS
 
-<div align="center">
 <img src="https://github.com/ArtemenkoDany/MLOps-Trainee---Test-task/blob/main/photos/tg_image_2160295535.jpeg" alt="image" width="30%"/>
-</div>
 
 ## About
 
