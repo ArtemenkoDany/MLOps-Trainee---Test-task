@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="/static/styles.css">
+
+    <title>MLOps Trainee - Test task</title>
+  </head>
+  <body class="text-center">
+    <form class="form-signin" method=post enctype=multipart/form-data>
+        <h1 class="h3 mb-3 font-weight-normal">Upload any image</h1>
+        <input type="file" name="file" class="form-control-file" id="inputfile" onchange="loadFile(event)" >
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
+        <p class="mt-5 mb-3 text-muted">Built using Pytorch & Flask</p>
+        <p><img id="output" width="200" /></p>
+    </form>
+
+    <script type="text/javascript">
+      $('#inputfile').bind('change', function() {
+          let fileSize = this.files[0].size/1024/1024; // this gives in MB
+          if (fileSize > 1) {
+            $("#inputfile").val(null);
+            alert('file is too big. images more than 1MB are not allowed')
+            return
+          }
+
+          let ext = $('#inputfile').val().split('.').pop().toLowerCase();
+          if($.inArray(ext, ['jpg','jpeg']) === -1) {
+            $("#inputfile").val(null);
+            alert('only jpeg/jpg files are allowed!');
+          }
+      });
+    </script>
+
+    <script type="text/javascript">
+    let input = document.querySelector(".form-control-file");
+    let button = document.querySelector(".btn");
+    button.disabled = true;
+    input.addEventListener("change", stateHandle);
+
+    function stateHandle() {
+        if (document.querySelector(".form-control-file").value === "") {
+            button.disabled = true;
+        } else {
+            button.disabled = false;
+        }
+    }
+  </script>
+
+    <script type="text/javascript">
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+
+  </body>
+</html>
