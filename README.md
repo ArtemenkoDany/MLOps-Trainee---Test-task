@@ -1,4 +1,4 @@
-# MLOps-Trainee Test-task
+# Yolov5 object detection model deployment using flask
 
 YOLOv5 is a family of object detection architectures and models pretrained on the COCO dataset, and represents Ultralytics open-source research into future vision AI methods
  
