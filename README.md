@@ -3,7 +3,7 @@
 YOLOv5 is a family of object detection architectures and models pretrained on the COCO dataset, and represents Ultralytics open-source research into future vision AI methods
  
  
-## This test-task built with flask (Python) html/CSS and JS
+## This project built with flask (Python) html/CSS and JS
 
 <img src="https://github.com/ArtemenkoDany/MLOps-Trainee---Test-task/blob/main/photos/tg_image_2160295535.jpeg" alt="image" width="30%"/>
 
